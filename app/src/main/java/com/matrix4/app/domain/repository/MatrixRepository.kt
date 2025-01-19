@@ -1,5 +1,6 @@
 package com.matrix4.app.domain.repository
 
+import com.matrix4.app.domain.model.Section
 import com.matrix4.app.domain.model.Task
 
 interface MatrixRepository {
@@ -9,4 +10,5 @@ interface MatrixRepository {
     fun getDelegateList(): List<Task>
     fun getEliminateList(): List<Task>
 
+    fun changeSection(task: Task, section: Section)
 }
